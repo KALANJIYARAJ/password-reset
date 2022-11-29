@@ -57,7 +57,7 @@ function CreateAc() {
         onSubmit: async (values) => {
           try {
             await axios.post(
-              "http://localhost:3003/user/register",
+              "https://password-rest.herokuapp.com/user/register",
               values
             );
             alert("Success");

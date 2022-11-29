@@ -11,7 +11,7 @@ function Forget() {
         },
         onSubmit: async (values) => {
           try {
-            const user =await axios.post("http://localhost:3003/forgot", values);
+            const user =await axios.post("https://password-rest.herokuapp.com/forgot", values);
             alert("Check your email");
             navigate("/");
           } catch (error) {

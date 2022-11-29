@@ -13,7 +13,7 @@ function Login() {
     },
     onSubmit: async (values) => {
       try {
-        const user =await axios.post("http://localhost:3003/login", values);
+        const user =await axios.post("https://password-rest.herokuapp.com/login", values);
         if(user.data.message === 'Success'){
         alert("Successfully Login");
         navigate("/welcome");
