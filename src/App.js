@@ -8,7 +8,7 @@ import Login from "./Login/Login";
 import CreateAc from "./Login/CreateAc";
 import Forget from "./Login/Forget";
 import Welcome from "./Welcome";
-import RestPassword from "./Login/RestPassword";
+import ResetPassword from "./Login/ResetPassword";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/accout" element={<CreateAc />}></Route>
         <Route path="/forgot" element={<Forget />}></Route>
         <Route path="/welcome" element={<Welcome />}></Route>
-        <Route path="/reset" element={<RestPassword/>}></Route>
+        <Route path="/reset/:userId" element={<ResetPassword/>}></Route>
       </Routes>
     </BrowserRouter>
   );

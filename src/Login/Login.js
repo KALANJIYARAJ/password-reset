@@ -2,6 +2,7 @@ import axios from "axios";
 import { useFormik } from "formik";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { config } from "../config";
 
 function Login() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function Login() {
     },
     onSubmit: async (values) => {
       try {
-        const user =await axios.post("https://password-rest.herokuapp.com/login", values);
+        const user =await axios.post(`${config.api}/login`, values);
         if(user.data.message === 'Success'){
         alert("Successfully Login");
         navigate("/welcome");
