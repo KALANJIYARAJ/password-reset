@@ -70,9 +70,9 @@ function CreateAc() {
         },
       });
       return (
-        <div className="container">
+        <div className="container-lg mt-5 ">
           <form onSubmit={formik.handleSubmit}>
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-lg-6">
                 <div className="form-group">
                   <label>Name</label>
